@@ -540,3 +540,100 @@ p {
     height: 350px;
   }
 }
+
+/* ================= ESTILOS PARA ARTIGOS/BLOG ================= */
+.article-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.breadcrumb {
+  display: inline-block;
+  font-family: var(--font-title);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 16px;
+  background: var(--primary-light);
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.article-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.article-header h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 24px;
+}
+
+.article-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  margin-bottom: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  border: 4px solid #fff;
+}
+
+.article-content h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin: 40px 0 16px;
+}
+
+.article-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 24px;
+  color: var(--text-main);
+}
+
+.article-content ul {
+  margin-bottom: 24px;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.article-content li {
+  margin-bottom: 12px;
+}
+
+/* Caixa de Vendas no meio do artigo */
+.article-cta {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--box-border);
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  margin: 60px 0;
+  box-shadow: 0 15px 35px rgba(148, 48, 83, 0.05);
+}
+
+.article-cta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.article-cta p {
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+  color: var(--text-light);
+}
+
+@media (max-width: 600px) {
+  .article-image {
+    height: 250px;
+  }
+  .article-cta {
+    padding: 24px;
+  }
+}
