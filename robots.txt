@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://madacabelos.github.io/salao/sitemap.xml
