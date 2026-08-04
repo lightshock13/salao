@@ -637,3 +637,49 @@ p {
     padding: 24px;
   }
 }
+
+/* ================= FAQ OCULTA (SEO WHITE-HAT) ================= */
+.seo-faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.seo-faq {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--box-border);
+  border-radius: var(--radius);
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.seo-faq summary {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  cursor: pointer;
+  list-style: none; /* Remove a setinha em navegadores modernos */
+  text-align: center;
+  font-weight: 500;
+}
+
+.seo-faq summary::-webkit-details-marker {
+  display: none; /* Remove a setinha no Chrome/Safari */
+}
+
+.faq-content {
+  padding-top: 15px;
+  border-top: 1px solid var(--box-border);
+  margin-top: 15px;
+  text-align: left;
+}
+
+.faq-content h3 {
+  font-size: 1rem;
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.faq-content p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
